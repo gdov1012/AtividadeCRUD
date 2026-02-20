@@ -1,0 +1,196 @@
+/* =========================== RESET GERAL =========================== */ 
+    * {
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif; 
+        } 
+
+    body {
+        background-color: #0d0d0d; 
+        color: #d6d3c1;
+     }
+
+ /* =========================== NAVBAR =========================== */ 
+    .topo .navbar { 
+        background-color: #141414 !important;
+         padding: 12px 20px; 
+         border-bottom: 1px solid #222;
+         }
+    .navbar-brand {
+         display: flex; 
+         align-items: center; 
+         gap: 10px; 
+         color: #fff !important; 
+         font-size: 20px; 
+         font-weight: bold;
+         }
+    .navbar-brand img {
+         width: 40px; 
+         height: auto;
+         } 
+         .navbar-nav .nav-link { 
+            color: #bbb !important; 
+            margin-left: 18px;
+             font-size: 17px; 
+             transition: 0.3s; 
+            } 
+    .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+         color: #f00d8a !important; 
+        }
+
+    /* =========================== CARROSSEL =========================== */
+     .meio { 
+        width: 100%;
+         margin-top: 20px; 
+        } 
+
+    .carousel-item img { 
+        height: 500px;
+         object-fit: cover; 
+         border-radius: 6px; 
+         box-shadow: 0 4px 20px rgba(0,0,0,0.6); 
+        }
+        
+        /* Botões brancos */
+         .carousel-control-prev-icon, .carousel-control-next-icon { 
+            filter: invert(1);
+         } 
+         
+         /* =========================== CARDS DA LISTAGEM (midia-read) =========================== */
+          .card { 
+            background-color: #1a1a1a; 
+            color: #fff; 
+            border: none; 
+            border-radius: 12px; transition: transform .2s ease-in-out, box-shadow .2s;
+         } 
+         .card:hover { 
+            transform: scale(1.04); 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+        } 
+        .card img { 
+            border-radius: 12px 12px 0 0;
+        } 
+        
+        /* Títulos dos cards */
+         .card-title {
+            font-size: 18px;
+            font-weight: bold;
+             color: #f00d8a; 
+        } 
+            .card-text {
+                 color: #ccc;
+        } 
+                
+                /* Botão nos cards */ 
+            .btn-primary {
+                     background-color: #f00d8a; 
+                     border: none; 
+                     font-weight: bold; 
+                     transition: 0.3s; 
+        } 
+            .btn-primary:hover {
+                         background-color: #ba0a7f;
+        } 
+                         
+                         /* =========================== RODAPÉ =========================== */
+        .rodape { 
+             width: 100%; 
+            text-align: center; 
+                            background-color: #141414; 
+                            padding: 20px 0; 
+                            color: #999; 
+                            margin-top: 40px; 
+                            border-top: 1px solid #222;
+        } 
+                         
+                         /* =========================== RESPONSIVIDADE =========================== */ 
+                         @media (max-width: 768px) {
+                             .carousel-item img { height: 280px; } .navbar-brand { font-size: 18px; } .navbar-nav .nav-link { margin-left: 8px; } 
+        }
+
+        .bntprimary{
+            background-color: #1a1a1a;
+            width: 10%;
+            height: 5%;
+        }
+
+        .primary{
+            color: #f00d8a;
+            font-style:italic;
+        }
+
+        .form-control, .form-select {
+  background-color: #1a1a1a;
+  color: #d6d3c1;
+  border: 1px solid #333;
+}
+.form-control:focus, .form-select:focus {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #f00d8a;
+  box-shadow: 0 0 0 0.2rem rgba(240, 13, 138, 0.25);
+}
+
+
+.btn-secondary {
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #444;}
+
+  table {
+  background-color: #1a1a1a;
+  color: #d6d3c1;
+}
+table thead {
+  background-color: #141414;
+  color: #f00d8a;
+}
+table tbody tr:nth-child(even) {
+  background-color: #222;
+}
+table tbody tr:hover {
+  background-color: #333;
+}
+
+
+.table {
+  background-color: #1a1a1a !important; 
+  color: #d6d3c1 !important;           
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #141414 !important;
+  color: #f00d8a !important; /* cabeçalho destacado */
+}
+
+.table th, .table td {
+  border: 1px solid #333 !important;
+  padding: 12px;
+}
+
+/* Linhas alternadas */
+.table tbody tr:nth-child(even) {
+  background-color: #1a1a1a !important;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #1a1a1a !important;
+}
+
+/* Hover */
+.table tbody tr:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+/* =========================== COLUNA CLASSIFICAÇÃO =========================== */
+.table td.classificacao {
+  color: #ff9800;          /* laranja para destacar */
+  font-weight: bold;
+}
+
+

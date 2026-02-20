@@ -1,0 +1,15 @@
+
+create database PW2;
+use PW2;
+
+CREATE TABLE `tbMidia` (
+    `codigo` INT PRIMARY KEY AUTO_INCREMENT,
+    `nome` VARCHAR(50) NOT NULL,
+    `sinopse` VARCHAR(250) NOT NULL,
+    genero ENUM('Acao','Aventura','Animação','Comedia','Drama','Ficcao Cientifica','Fantasia','Terror','Romance','Musical','Suspense','Documentario')NOT NULL,
+    anoLanc INT NOT NULL,
+    tipo ENUM('Filme', 'Serie') NOT NULL,
+    clasInd VARCHAR(2) NOT NULL,
+    episodio INT,
+    CONSTRAINT chk_ano_4dig CHECK (anoLanc BETWEEN 0 AND 9999)
+);

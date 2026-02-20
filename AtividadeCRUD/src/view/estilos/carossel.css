@@ -1,0 +1,25 @@
+/* Transição suave para o carousel */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* duração e suavidade */
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Ajuste dos botões de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* deixa os ícones brancos */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.2); /* leve zoom ao passar o mouse */
+  opacity: 0.2;
+}
